@@ -1,2 +1,17 @@
 # Print-Pattern-of-Alternating-1s-and-0s
 Using C language program is made which gives the output to Print Pattern of Alternating 1s and 0s
+#include <stdio.h>
+int main() {
+    int n, i = 1, j;
+    scanf("%d", &n);
+    while(i <= n) {
+        j = 1;
+        while(j <= n) {
+            printf("%d ", (i + j) % 2);
+            j++;
+        }
+        printf("\n");
+        i++;
+    }
+    return 0;
+}
